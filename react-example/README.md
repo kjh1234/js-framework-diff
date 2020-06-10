@@ -2,6 +2,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+프로젝트 생성
+
+### `npx create-react-app react-example`
+
 In the project directory, you can run:
 
 ### `npm start`

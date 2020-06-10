@@ -1,5 +1,10 @@
 # vue-cli-example
 
+## Project Create
+```
+vue create vue-cli-example
+```
+
 ## Project setup
 ```
 npm install
