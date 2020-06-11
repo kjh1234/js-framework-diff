@@ -8,7 +8,7 @@ import NotFound from '../pages/exception/NotFound.vue'
 Vue.use(VueRouter)
 
 const router = new VueRouter({
-    mode: 'history',
+    mode: 'hash',
     routes: [
       { path: '/', component: Home },
       { path: '/about', component: About },
