@@ -1,11 +1,18 @@
 <script>
-	export let name;
+	import Router from 'svelte-spa-router'
+	import {link} from 'svelte-spa-router'
+	import active from 'svelte-spa-router/active'
+	import routes from './routes'
 </script>
 
-<main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-</main>
+
+<ul class="navigation-links">
+    <li><a href="/" use:link use:active>Home</a></li>
+    <li><a href="/about" use:link>About</a></li>
+    <li><a href="/users" use:link>Users</a></li>
+</ul>
+
+<Router {routes}/>
 
 <style>
 	main {
