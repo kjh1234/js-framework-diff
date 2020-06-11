@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Route, Switch, BrowserRouter as Router } from "react-router-dom";
+import { Link, Route, Switch, HashRouter as Router } from "react-router-dom";
 import Home from "./pages/main/Home";
 import About from "./pages/main/About";
 import NotFound from "./pages/exception/NotFound";
