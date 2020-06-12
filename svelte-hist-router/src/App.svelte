@@ -1,18 +1,15 @@
 <script>
-	import Router from 'svelte-spa-router'
-	import {link} from 'svelte-spa-router'
-	import active from 'svelte-spa-router/active'
-	import routes from './routes'
+	import { Link } from 'yrv'
+	import Router from './routes/index.svelte'
 </script>
 
-
 <ul class="navigation-links">
-    <li><a href="/" use:link use:active>Home</a></li>
-    <li><a href="/about" use:link>About</a></li>
-    <li><a href="/users" use:link>Users</a></li>
+	<li><Link href="/" className="btn">Home</Link></li>
+	<li><Link href="/about" className="btn">About</Link></li>
+	<li><Link href="/users" className="btn">Users</Link></li>
 </ul>
 
-<Router {routes}/>
+<Router />
 
 <style>
 	main {
